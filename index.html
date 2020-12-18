@@ -1,513 +1,189 @@
-:root {
-  --main-black: #121e29;
-  --main-red: #e3216a;
-  --main-blue: #52657a;
-  --main-green: #00a651;
-  --main-orange: #ff9f00;
-  --main-white: #f5f3e5;
-  --fzlv: 25px;
-  --fzmv: 2px;
-  --fzsv: 20px;
-  --h1: 50px;
-}
-@media only screen and (max-width: 790px) {
-  :root {
-    --fzlv: 20px;
-    --h1: 30px;
-  }
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: "Roboto Slab", "Roboto Mono", serif;
-  background-image: linear-gradient(
-      115deg,
-      rgba(20, 33, 45, 0.9),
-      rgba(20, 33, 45, 0.9)
-    ),
-    url("https://i.guim.co.uk/img/media/2abe5a9bee5769168843fc873d39aa2696a7cc0d/0_139_4467_2681/master/4467.jpg?width=1920&quality=85&auto=format&fit=max&s=a8c43e81775114404286ffd675453f7f");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 0;
-  text-shadow: -4px 3px 3px rgba(0, 0, 0, 0.43);
-  color: #8892b0;
-  scroll-behavior: smooth;
-  margin: 100px 50px 0px 50px;
- 
-}
-@media only screen and (max-width: 790px) {
-  body {
-    margin: 5%;
-  }
-}
+<head>
+  <style media="screen">
 
-.body {
-  display: none;
-}
+  </style>
+  <title>Uche Okoroafor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="all.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+  <script type="text/css" src="scripts\functions.js"></script>
+</head>
 
-.cont {
-  margin: 0 auto;
-  margin-top: -70px;
-  font-family: "Roboto Slab", serif;
-}
+<body id="home">
+  <section>
 
-.cont h1 {
-  font-size: 50px;
-  opacity: 0;
-  color: #2083df;
+    <div class="welcomepage">
+      <div class="cont">
+        <h1 class="intro">Hey</h1>
+        <h1 class="intro">My Name is Uche</h1>
+        <h1 class="intro">Welcome To My Portfolio</h1>
+      </div>
+    </div>
+  </section>
+  <div class="body">
+    <div class="navbar">
 
-  /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;#aadfdf*/
-}
+      <div class="logo">
+        <a href="#home"><img src="brandlogo.png" alt="logo"></a>
+      </div>
 
-#intro {
-  opacity: 0;
-  margin-bottom: 250px;
-  font-size: var(--fzlv);
-}
-#intro h1 {
-  color: #2083df;
-  font-size: clamp(40px, 4vw, 80px);
-  font-size: var(--h1);
-}
+      <div class="menubar" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
 
-.welcomepage {
-  display: block; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 100; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 600px; /* Full height */
-  text-align: center;
-  background-image: linear-gradient(
-      115deg,
-      rgba(20, 33, 45, 0.9),
-      rgba(20, 33, 45, 0.9)
-    ),
-    url("https://i.guim.co.uk/img/media/2abe5a9bee5769168843fc873d39aa2696a7cc0d/0_139_4467_2681/master/4467.jpg?width=1920&quality=85&auto=format&fit=max&s=a8c43e81775114404286ffd675453f7f");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.logo {
-  display: inline-block;
-}
-.logo img {
-  width: 100px;
-  height: 50px;
-  display: inline;
-  margin: 8px 10px 30px 20px;
-  transform: rotateY(0deg);
-  user-select: none;
-}
-@media only screen and (max-width: 785px) {
-  .logo img {
-    margin: 8px 10px 15px -5px;
-  }
-}
 
-.navbar {
-  background-image: linear-gradient(
-    115deg,
-    rgba(20, 33, 45, 0.98),
-    rgba(20, 33, 45, 0.98)
-  );
-  overflow-y: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 0;
-  box-shadow: 2px 5px 11px 3px rgba(0, 0, 0, 0.4);
-  white-space: nowrap;
-}
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-.menubar {
-  display: none;
-  cursor: pointer;
-  float: right;
-  margin-right: 20px;
-  margin-top: 10px;
-}
-@media only screen and (max-width: 785px) {
-  .menubar {
-    display: inline-block;
-  }
-}
+    <div class="closemenubar"></div>
+    <div class="mobimenu">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div style="margin-top:150px;">
 
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #2083df;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.mobimenu {
-  position: fixed;
-  right: 0;
-  top: 65px;
-  width: 0;
-  opacity: 0;
-  height: 100vh;
-  z-index: 1000;
-  background-image: linear-gradient(
-    115deg,
-    rgba(20, 33, 45, 1),
-    rgba(20, 33, 45, 1)
-  );
-}
-@media only screen and (min-width: 785px) {
-  .mobimenu {
-    display: none;
-  }
-}
-
-.closemenubar {
-  position: fixed;
-  z-index: 800;
-  background: rgba(0, 0, 0, 0.5);
-  display: none;
-  height: 100%;
-  width: 100%;
-  top: 65px;
-  left: 0;
-}
-
-.mobimenu ul {
-  flex-flow: column nowrap;
-  justify-content: center;
-}
-
-nav li,
-.mobimenu li {
-  margin: 0px 20px;
-  font-size: 20px;
-  padding: 18px;
-  list-style-type: none;
-  transition: 0.5s;
-}
-nav a,
-.mobimenu a {
-  text-decoration: none;
-  color: inherit;
-}
-.mobimenu li:hover {
-  background: #2083df;
-  color: #121e29;
-  transition: 0.5s;
-  text-shadow: none;
-}
-
-nav {
-  display: inline;
-}
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  float: right;
-}
-@media only screen and (max-width: 785px) {
-  nav {
-    display: none;
-  }
-}
+    </div>
 
 
 
-nav li:hover {
-  transition: 0.5s;
-  border-bottom: 5px solid #2083df;
-  color: #2083df;
-}
+
+    <div id="intro">
+      <p>Hi, My Name Is </p>
+      <h1>Uchechukwu Okoroafor.<br>I am a FrontEnd Web Developer</h1>
+      <p>I am currently Based in Dubai.I have passion for coding and challenging <br> myself creatively.<br> I can creat
+        simple and amazing responsive websites with a whimsical twist</p>
+
+    </div>
+
+    <div id="about">
+      <h2>About Me</h2>
+      <div class="fade_rule">
+        <div class="flashlight"></div>
+      </div>
+      <div class="about">
+       
+        <div class="aboutmed">
+ <div class="pix">
+ <img src="images/uchepic.jpg" alt="uche'spix" onclick="lineup()">
+        </div>
+          <p>Hi,My Name is
+          <h3>Uchechukwu okoroafor</h3>
+          </p>
+          <p>You can call me <strong> Uche</strong></p>
+          <p> I am a FrontEnd Web developer and a Graduate of Computer Engineering<br /> I am currently Based in
+            Dubai,United Arab Emirates.</p><p> I am an excellent savvy, enthusiastic and result oriented individual, seeking employment in a dynamic
+            environment that offers an exceptional knowledge of absorbing information, analyzing problems, making
+           objective decisions and
+            working with existing human and material resources, so as to achieve a high degree of work efficiency.</p><p>I have passion for coding and challenging myself creatively.
+            I enjoy learning new skills daily,and staying connected,and involved with my fellow developers.</p>
+
+        </div>
+       <div class="aboutmed2"> <h4>Technical Skills</h4>
+<div class="listalign">
+          <div><ul>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Python</li>
+            <li>Responsive Web Design</li>
+          </ul>
+</div><div>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>JQuery</li>
+          </ul>
+</div>
+    </div>
+        </div>
+         <div class="aboutmed3"> <h4>Other Skills</h4>
+          <ul>
+            <li>Good communication</li>
+            <li>Problem Solving & Teamwork</li>
+            <li>Time Management</li>
+            <li>Detail Oriented</li>
+
+          </ul></div>
+      </div>
+    </div>
 
 
-#about {
-padding-top: 45px;
+    <div id="projects">
+      <h2>Projects</h2>
+      <div class="fade_rule">
+        <div class="flashlight"></div>
+      </div>
 
-}
+      <div class="project1">
+<img src="images/UpDiscountpic.png" alt="">
+      </div>
+<div class="projectdetails">
+This is a website that shows discounted items from different supermarket within a place,it allows you to search for an item,supermarket or check for items that are on discount within your location.The discounted Items is displayed so that you can compare price of an item from different supermarkets.</div>
+    </div>
+    <div id="contact">
+      <h2>Contact</h2>
+      <div class="fade_rule">
+        <div class="flashlight"></div>
+      </div>
+      <h1>Interested in Knowing more about me?</h1>
+      <div class="contacticons">
+        <a href="#">
+          <div class="iconspace">
+            <i class="fab fa-2x fa-github icon"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="iconspace">
+            <i class="fab fa-2x fa-twitter icon"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="iconspace">
+            <i class="fab fa-2x fa-linkedin icon"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="iconspace">
+            <i class="fab fa-2x fa-instagram icon"></i>
+          </div>
+        </a>
 
-.abouthead {
-  width: 100%;
-}
-h2 {
-  margin-left: 60px;
-  color: white;
-}
+      </div>
+      <p>Feel free to visit my social media pages </p>
+    </div>
 
-.fade_rule {
-  height: 5px;
-  background: rgb(32, 131, 223);
-  background: linear-gradient(
-    90deg,
-    rgba(224, 238, 238, 0.1) 0%,
-    rgba(32, 131, 223, 1) 54%,
-    rgba(224, 238, 238, 0.1) 100%
-  );
-  width: 0;
-  margin: 0 auto;
-  margin-left: 60px;
-  position: relative;
-  z-index: -1;
-}
-.flashlight {
-  background: #2083df;
-  -webkit-box-shadow: -3px 2px 13px 10px #2083df;
-  box-shadow: -3px 2px 13px 10px #2083df;
-  height: 5px;
-  width: 15px;
-  border-radius: 30%;
-  margin-left: 100%;
-  z-index: -1;
-}
-
-.about {
-  display: grid;
-grid-template-columns: repeat(12,1fr);
-grid-template-rows: auto auto;
- padding-top: 40px;
-}
-@media only screen and (max-width: 785px) {
-  .about {
-    display: flex;
-    flex-flow: column nowrap;
-  }
-}
-.pix {
-margin:0 50px;
-float:left;
-}
-.aboutmed {
-
-grid-column: 1/span 12;
-}
-
-.aboutmed2 {
-grid-column: 3/8;
-line-height: 35px;
-
-}
-.aboutmed3 {
- grid-column: 9/-1;
-line-height: 35px;
-}
-
-[class*=aboutmed]{
-  letter-spacing: normal;
-  font-size: 25px;
-line-height: 35px;
-
-}
+    <footer class="footer">
 
 
-.aboutmed2 ul {
-margin-top: 0;
-white-space: nowrap;
-}
+      <p>@ Uche Okoroafor 2020. View the code on <a href="#">GitHub.</a></p>
 
-.aboutmed3 ul {
-margin-top: 0;
-white-space: nowrap;
-}
+    </footer>
 
-.aboutmed2 .listalign{
-display: flex;
-flex-flow: row wrap;
-}
-@media only screen and (max-width: 785px) {
- .aboutmed2 .listalign{
-    display: block;
-  }
-}
-.aboutmed2 h4{
-margin-left: 80px;
-display: inline;
-}
+    <script src="scripts.js"></script>
+  </div>
+</body>
 
-.aboutmed3 h4{
-margin: 0;
-display: inline;
-margin-left: 30px;
-}
-@media only screen and (max-width: 785px) {
-.aboutmed3 h4,.aboutmed2 h4{
-text-align: center;
-display: block;
-margin: 0;
-  }
-}
-
-
-
-.pix img {
-  display: inline-block;
-   width: 300px;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 15px;
-  transition: 0.9s;
-  -webkit-box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
-  box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
-}
-@media only screen and (max-width: 785px) {
-  .pix img {
-  width: 100%;
-  height:auto;
-  }
-}
-
-.pix img:hover {
-  width: 320px;
-  height: auto;
-  transition: 0.7s;
-  margin: 0;
-  -webkit-box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
-  box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
-}
-
-.projects {
-  width: 800px;
-  margin: 0 20px;
-  border-radius: 5px;
-  background: antiquewhite;
-  box-shadow: 2px 5px 11px 3px rgba(0, 0, 0, 0.4);
-  text-align: center;
-}
-
-#projects {
-padding-top: 40px;
-  margin: 0px 100px;
-
-}
-@media only screen and (max-width: 785px) {
- #projects {
-  display: flex;
-justify-content: space-between;
-flex-flow: row nowrap;
-  }
-}
-
-#projects h2 {
-  text-align: left;
-}
-
-.project1 img{
-max-width:500px;
-height: auto;
-margin-top: 20px;
-}
-
-.projectdetails{
-margin: 10px;
-margin-top: 20px;
-font-size: var(--fzlv);
-
-}
-
-#contact {
-padding-top: 40px;
-  margin: 0 100px;
-  text-align: center;
-  height: 400px;
-}
-#contact h2 {
-  text-align: left;
-}
-
-#contact h1 {
-  margin-top: 50px;
-}
-
-#contact p {
-  margin-top: 35px;
-}
-
-.contacticons {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.iconspace i {
-  position: relative;
-  color: var(--main-white);
-  top: 32%;
-  opacity: 1;
-  z-index: 1;
-}
-
-.contacticons a {
-  text-decoration: none;
-}
-
-.iconspace {
-  border-radius: 50%;
-  background: rgb(32, 131, 223, 0.2);
-  height: 100px;
-  width: 100px;
-  margin: 5px;
-  transition: opacity 1s;
-  transition: background 1s;
-}
-
-@media only screen and (max-width: 785px) {
-  .iconspace {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-.iconspace:hover {
-  transition: 1s;
-  background: rgb(32, 131, 223, 1);
-  color: #121e29;
-}
-
-.footer {
-  text-align: center;
-  background-image: linear-gradient(
-    115deg,
-    rgba(20, 33, 45, 0.8),
-    rgba(20, 33, 45, 0.8)
-  );
-  height: 50px;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 0px;
-  width: inherit;
-}
-
-.footer p {
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.footer a {
-  color: var(--main-red);
-  text-decoration: none;
-}
+</html>
