@@ -71,7 +71,7 @@ window.onscroll = function() {scrollFunction();scrollshow1();scrollshow2();scrol
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.getElementsByClassName("fade_rule")[0].style="width:90%;transition:0.8s;transition-timing-function: linear";
+    document.getElementsByClassName("fade_rule")[0].style="width:100%;transition:0.8s;transition-timing-function: linear";
     var ivt =  setTimeout(stopdis,800);
     function stopdis(){
 document.getElementsByClassName("flashlight")[0].style="display:none";
@@ -81,7 +81,7 @@ document.getElementsByClassName("flashlight")[0].style="display:none";
 
 function scrollshow1() {
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        document.getElementsByClassName("fade_rule")[1].style="width:90%;transition:0.8s;transition-timing-function: linear";
+        document.getElementsByClassName("fade_rule")[1].style="width:100%;transition:0.8s;transition-timing-function: linear";
         var ivt =  setTimeout(stopdis,800);
         function stopdis(){
     document.getElementsByClassName("flashlight")[1].style="display:none";
@@ -92,7 +92,7 @@ function scrollshow1() {
 
   function scrollshow2() {
       if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
-          document.getElementsByClassName("fade_rule")[2].style="width:90%;transition:0.8s;transition-timing-function: linear";
+          document.getElementsByClassName("fade_rule")[2].style="width:100%;transition:0.8s;transition-timing-function: linear";
           var ivt =  setTimeout(stopdis,800);
           function stopdis(){
       document.getElementsByClassName("flashlight")[2].style="display:none";
