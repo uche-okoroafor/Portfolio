@@ -9,6 +9,7 @@
   --fzmv: 2px;
   --fzsv: 20px;
   --h1: 50px;
+  --mb:200px;
 }
 @media only screen and (max-width: 790px) {
   :root {
@@ -36,7 +37,7 @@ body {
   text-shadow: -4px 3px 3px rgba(0, 0, 0, 0.43);
   color: #8892b0;
   scroll-behavior: smooth;
-  margin: 100px 50px 0px 50px;
+  margin: 100px 100px 0px 100px;
  
 }
 @media only screen and (max-width: 790px) {
@@ -65,7 +66,7 @@ body {
 
 #intro {
   opacity: 0;
-  margin-bottom: 250px;
+  margin-bottom: var(--mb);
   font-size: var(--fzlv);
 }
 #intro h1 {
@@ -246,6 +247,7 @@ nav li:hover {
 
 #about {
 padding-top: 45px;
+margin-bottom: var(--mb);
 
 }
 
@@ -253,7 +255,7 @@ padding-top: 45px;
   width: 100%;
 }
 h2 {
-  margin-left: 60px;
+
   color: white;
 }
 
@@ -267,8 +269,7 @@ h2 {
     rgba(224, 238, 238, 0.1) 100%
   );
   width: 0;
-  margin: 0 auto;
-  margin-left: 60px;
+  margin: 0;
   position: relative;
   z-index: -1;
 }
@@ -390,49 +391,89 @@ margin: 0;
 }
 
 .projects {
-  width: 800px;
   margin: 0 20px;
   border-radius: 5px;
-  background: antiquewhite;
   box-shadow: 2px 5px 11px 3px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 
 #projects {
-padding-top: 40px;
-  margin: 0px 100px;
+  padding-top: 40px;
+ margin-bottom: var(--mb);
+}
 
-}
-@media only screen and (max-width: 785px) {
- #projects {
-  display: flex;
-justify-content: space-between;
-flex-flow: row nowrap;
-  }
-}
 
 #projects h2 {
   text-align: left;
 }
 
 .project1 img{
-max-width:500px;
+max-width:70%;
 height: auto;
-margin-top: 20px;
+display: block;
+margin:0 auto;
+margin-top: 50px;
+transition: max-width 1s;
+ -webkit-box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width: 785px) {
+.project1 img{
+max-width:90%;
+margin-top: 30px;
+  }
+}
+
+.project1 img:hover{
+max-width:72%;
+transition:1s;
+-webkit-box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
 }
 
 .projectdetails{
-margin: 10px;
-margin-top: 20px;
+margin: 50px 100px 50px 100px;
 font-size: var(--fzlv);
+text-align: center;
 
 }
+@media only screen and (max-width: 785px) {
+.projectdetails{
+margin: 30px 20px 50px 20px;
+text-align:left;
+  }
+}
+
+.viewcode{
+margin:0 auto;
+margin-top: 30px;
+outline: #ff9f00;
+}
+
+.viewcode a{
+text-decoration:none;
+padding: 18px;
+color:#ff9f00;
+ background-color:  hsla(209, 38%, 13%, 1);
+border-radius: 5px;
+}
+
+.viewcode a:hover{
+background-color:  rgb(32, 131, 223, 1);
+color:hsla(209, 38%, 13%, 1);
+}
+
+
+
+
 
 #contact {
 padding-top: 40px;
-  margin: 0 100px;
   text-align: center;
   height: 400px;
+ margin-bottom: var(--mb);
 }
 #contact h2 {
   text-align: left;
@@ -492,7 +533,7 @@ padding-top: 40px;
   background-image: linear-gradient(
     115deg,
     rgba(20, 33, 45, 0.8),
-    rgba(20, 33, 45, 0.8)
+    hsla(209, 38%, 13%, 0.8)
   );
   height: 50px;
   position: relative;
