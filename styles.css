@@ -54,7 +54,8 @@ body {
 
 .body {
   display: none;
-margin-bottom:-30px;
+margin-bottom:-100px;
+padding-bottom: -10px;
 }
 
 .cont {
@@ -571,7 +572,7 @@ font-size:var(--fzsv)
     hsla(209, 38%, 13%, 0.8)
   );
 position: relative;
-bottom: -15px;
+bottom: -20px;
 }
 
 .footer p {
