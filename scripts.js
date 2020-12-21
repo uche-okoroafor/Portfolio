@@ -80,7 +80,7 @@ document.getElementsByClassName("flashlight")[0].style="display:none";
 }
 
 function scrollshow1() {
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    if (document.body.scrollTop > 1350 || document.documentElement.scrollTop > 1350) {
         document.getElementsByClassName("fade_rule")[1].style="width:100%;transition:0.8s;transition-timing-function: linear";
         var ivt =  setTimeout(stopdis,800);
         function stopdis(){
@@ -91,7 +91,7 @@ function scrollshow1() {
 
 
   function scrollshow2() {
-      if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+      if (document.body.scrollTop > 2400 || document.documentElement.scrollTop >2400) {
           document.getElementsByClassName("fade_rule")[2].style="width:100%;transition:0.8s;transition-timing-function: linear";
           var ivt =  setTimeout(stopdis,800);
           function stopdis(){
