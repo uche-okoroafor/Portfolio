@@ -570,6 +570,8 @@ font-size:var(--fzsv)
     rgba(20, 33, 45, 0.8),
     hsla(209, 38%, 13%, 0.8)
   );
+  position: relative;
+bottom: 0;
 }
 
 .footer p {
