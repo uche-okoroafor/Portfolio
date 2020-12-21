@@ -7,14 +7,20 @@
   --main-white: #f5f3e5;
   --fzlv: 25px;
   --fzmv: 2px;
-  --fzsv: 20px;
+  --fzsv: 30px;
   --h1: 50px;
   --mb:200px;
+  --padtop:50px;
+  --imghoverw:72%;
 }
 @media only screen and (max-width: 790px) {
   :root {
-    --fzlv: 20px;
+    --fzlv: 22px;
     --h1: 30px;
+   --mb:80px;
+--fzsv: 20px;
+--padtop:10px;
+--imghoverw:92%;
   }
 }
 
@@ -48,6 +54,7 @@ body {
 
 .body {
   display: none;
+margin-bottom:-30px;
 }
 
 .cont {
@@ -57,17 +64,17 @@ body {
 }
 
 .cont h1 {
-  font-size: 50px;
+  font-size: var(--h1);
   opacity: 0;
   color: #2083df;
-
-  /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;#aadfdf*/
+/* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;#aadfdf*/
 }
 
 #intro {
   opacity: 0;
   margin-bottom: var(--mb);
   font-size: var(--fzlv);
+ padding-top: var(--padtop);
 }
 #intro h1 {
   color: #2083df;
@@ -168,7 +175,7 @@ body {
 .mobimenu {
   position: fixed;
   right: 0;
-  top: 65px;
+  top: 60px;
   width: 0;
   opacity: 0;
   height: 100vh;
@@ -192,7 +199,7 @@ body {
   display: none;
   height: 100%;
   width: 100%;
-  top: 65px;
+  top: 60px;
   left: 0;
 }
 
@@ -248,14 +255,14 @@ nav li:hover {
 #about {
 padding-top: 45px;
 margin-bottom: var(--mb);
-
+font-size: var(--fzlv);
 }
 
 .abouthead {
   width: 100%;
 }
 h2 {
-
+font-size: var(--fzlv);
   color: white;
 }
 
@@ -289,6 +296,7 @@ h2 {
 grid-template-columns: repeat(12,1fr);
 grid-template-rows: auto auto;
  padding-top: 40px;
+font-size: var(--fzlv);
 }
 @media only screen and (max-width: 785px) {
   .about {
@@ -317,7 +325,7 @@ line-height: 35px;
 
 [class*=aboutmed]{
   letter-spacing: normal;
-  font-size: 25px;
+ font-size: var(--fzlv);
 line-height: 35px;
 
 }
@@ -372,16 +380,21 @@ margin: 0;
   -webkit-box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
   box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
+border-radius: 5px;
 }
 @media only screen and (max-width: 785px) {
   .pix img {
-  width: 100%;
+  width: 97%;
   height:auto;
   }
+.pix img:hover {
+ width:100%;
+
+}
 }
 
 .pix img:hover {
-  width: 320px;
+  width:320px;
   height: auto;
   transition: 0.7s;
   margin: 0;
@@ -389,6 +402,12 @@ margin: 0;
   -moz-box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
   box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
 }
+@media only screen and (max-width: 785px) {
+.pix img:hover {
+ width:100%;
+}
+}
+
 
 .projects {
   margin: 0 20px;
@@ -426,7 +445,7 @@ margin-top: 30px;
 }
 
 .project1 img:hover{
-max-width:72%;
+max-width:var(--imghoverw);
 transition:1s;
 -webkit-box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: -11px 9px 5px 0px rgba(0, 0, 0, 0.8);
@@ -449,15 +468,23 @@ text-align:left;
 .viewcode{
 margin:0 auto;
 margin-top: 30px;
-outline: #ff9f00;
+
+}
+@media only screen and (max-width: 785px) {
+.viewcode{
+display: flex;
+flex-flow: row wrap;
+  }
 }
 
 .viewcode a{
 text-decoration:none;
-padding: 18px;
-color:#ff9f00;
+padding: 2%;
+color:var(--main-orange);
  background-color:  hsla(209, 38%, 13%, 1);
 border-radius: 5px;
+margin: 10px;
+white-space: nowrap;
 }
 
 .viewcode a:hover{
@@ -477,10 +504,12 @@ padding-top: 40px;
 }
 #contact h2 {
   text-align: left;
+
 }
 
 #contact h1 {
   margin-top: 50px;
+font-size:var(--fzsv)
 }
 
 #contact p {
@@ -500,6 +529,12 @@ padding-top: 40px;
   opacity: 1;
   z-index: 1;
 }
+@media only screen and (max-width: 785px) {
+ .iconspace i {
+    top: 30%;
+  }
+}
+
 
 .contacticons a {
   text-decoration: none;
@@ -535,12 +570,6 @@ padding-top: 40px;
     rgba(20, 33, 45, 0.8),
     hsla(209, 38%, 13%, 0.8)
   );
-  height: 50px;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 0px;
-  width: inherit;
 }
 
 .footer p {
