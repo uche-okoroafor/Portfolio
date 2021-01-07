@@ -303,6 +303,7 @@ font-size: var(--fzlv);
   .about {
     display: flex;
     flex-flow: column nowrap;
+    text-align:center;
   }
 }
 .pix {
