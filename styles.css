@@ -110,7 +110,7 @@ padding-bottom: -15px;
 }
 @media only screen and (max-width: 785px) {
   .logo{
-  text-align:left;
+  margin-right:auto;
   }
 }
 .logo img {
@@ -423,15 +423,15 @@ border-radius: 5px;
   box-shadow: 2px 5px 11px 3px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
-@media only screen and (max-width: 785px) {
-  .projects {
-  text-align: center;
-  }
-}
 
 #projects {
   padding-top: 40px;
  margin-bottom: var(--mb);
+}
+@media only screen and (max-width: 785px) {
+  #projects {
+  text-align: center;
+  }
 }
 
 
