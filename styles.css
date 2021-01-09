@@ -49,14 +49,13 @@ body {
 @media only screen and (max-width: 790px) {
   body {
     margin: 5%;
-    text-align:center;
   }
 }
 
 .body {
   display: none;
 margin-bottom:-100px;
-padding-bottom: -15px;
+padding-bottom: -10px;
 }
 
 .cont {
@@ -107,11 +106,6 @@ padding-bottom: -15px;
 }
 .logo {
   display: inline-block;
-}
-@media only screen and (max-width: 785px) {
-  .logo{
-  margin-right:auto;
-  }
 }
 .logo img {
   width: 100px;
@@ -309,7 +303,6 @@ font-size: var(--fzlv);
   .about {
     display: flex;
     flex-flow: column nowrap;
-    text-align:center;
   }
 }
 .pix {
@@ -427,11 +420,6 @@ border-radius: 5px;
 #projects {
   padding-top: 40px;
  margin-bottom: var(--mb);
-}
-@media only screen and (max-width: 785px) {
-  #projects {
-  text-align: center;
-  }
 }
 
 
@@ -584,7 +572,7 @@ font-size:var(--fzsv)
     hsla(209, 38%, 13%, 0.8)
   );
 position: relative;
-bottom: -25px;
+bottom: -20px;
 }
 
 .footer p {
