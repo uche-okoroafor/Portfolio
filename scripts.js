@@ -67,7 +67,7 @@ document.querySelector(".logo img").style="transform:rotateY(" + logodeg + "deg)
 
 /*fade_rule*/
 
-window.onscroll = function() {scrollFunction();scrollshow1();scrollshow2();scrollshow3();};
+window.onscroll = function() {scrollFunction();scrollshow1();scrollshow2();};
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -101,10 +101,5 @@ function scrollshow1() {
     }
 
 
-var hover = document.querySelector('.imgspace').addEventListener("mouseover",convert);
 
-function convert (){
-
-document.getElementsByTagName('i').style="color:#121e29" ;
-}
 
