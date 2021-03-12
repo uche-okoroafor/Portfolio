@@ -520,21 +520,17 @@ font-size:var(--fzsv)
 .contacticons {
   display: flex;
   justify-content: center;
+
   margin-top: 40px;
 }
 
 .iconspace i {
   position: relative;
   color: var(--main-white);
-  top: 32%;
   opacity: 1;
   z-index: 1;
 }
-@media only screen and (max-width: 785px) {
- .iconspace i {
-    top: 30%;
-  }
-}
+
 
 
 .contacticons a {
@@ -549,6 +545,9 @@ font-size:var(--fzsv)
   margin: 5px;
   transition: opacity 1s;
   transition: background 1s;
+align-items: center;
+display: flex;
+justify-content: center;
 }
 
 @media only screen and (max-width: 785px) {
