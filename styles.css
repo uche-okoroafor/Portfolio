@@ -6,16 +6,18 @@
   --main-orange: #ff9f00;
   --main-white: #f5f3e5;
   --fzlv: 25px;
+  --fzlTv: 23px;
   --fzmv: 2px;
   --fzsv: 30px;
   --h1: 50px;
-  --mb:200px;
+  --mb:150px;
   --padtop:15px;
   --imghoverw:72%;
 }
 @media only screen and (max-width: 790px) {
   :root {
     --fzlv: 22px;
+ --fzlTv: 19px;
     --h1: 30px;
    --mb:80px;
 --fzsv: 20px;
@@ -53,7 +55,7 @@ body {
 }
 
 .body {
-  display: none;
+  display: block;
 margin-bottom:-100px;
 padding-bottom: -10px;
 }
@@ -72,7 +74,7 @@ padding-bottom: -10px;
 }
 
 #intro {
-  opacity: 0;
+  /* opacity: 0; */
   margin-bottom: var(--mb);
   font-size: var(--fzlv);
  padding-top: var(--padtop);
@@ -84,7 +86,7 @@ padding-bottom: -10px;
 }
 
 .welcomepage {
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 100; /* Sit on top */
   padding-top: 100px; /* Location of the box */
@@ -127,12 +129,12 @@ padding-bottom: -10px;
     rgba(20, 33, 45, 0.98),
     rgba(20, 33, 45, 0.98)
   );
-  overflow-y: hidden;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  height: 0;
+ height:60px;
+overflow-y:visible;
   box-shadow: 2px 5px 11px 3px rgba(0, 0, 0, 0.4);
   white-space: nowrap;
 }
@@ -324,6 +326,8 @@ line-height: 35px;
 line-height: 35px;
 }
 
+
+
 [class*=aboutmed]{
   letter-spacing: normal;
  font-size: var(--fzlv);
@@ -420,6 +424,7 @@ border-radius: 5px;
 #projects {
   padding-top: 40px;
  margin-bottom: var(--mb);
+
 }
 
 
@@ -427,12 +432,32 @@ border-radius: 5px;
   text-align: left;
 }
 
+#projects a {
+text-decoration: none;
+
+}
+
+.project-title{
+
+color:var(--main-white);
+text-align: center;
+font-size: var(--fzlTv);
+}
+
+
+.project1 {
+display: flex;
+flex-flow: column;
+justify-content: center;
+}
+
+.project1 span{
+text-align: center;
+}
+
 .project1 img{
 max-width:70%;
 height: auto;
-display: block;
-margin:0 auto;
-margin-top: 50px;
 transition: max-width 1s;
  -webkit-box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: -7px 6px 5px 0px rgba(0, 0, 0, 0.8);
@@ -486,11 +511,15 @@ color:var(--main-orange);
 border-radius: 5px;
 margin: 10px;
 white-space: nowrap;
+text-shadow: none;
+transition: background 0.8s;
+
 }
 
 .viewcode a:hover{
 background-color:  rgb(32, 131, 223, 1);
 color:hsla(209, 38%, 13%, 1);
+transition: background 0.8s;
 }
 
 
