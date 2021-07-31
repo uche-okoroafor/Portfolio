@@ -1,34 +1,4 @@
-var myVision = setInterval(welcomemodal, 1500);
-var iw = 0;
 
-function welcomemodal(){
-
-document.getElementsByClassName('intro')[iw].style="opacity:1;transition:opacity 1s";
-  iw++;
-}
-
-var stopvision = setTimeout(stopwelcome,7000);
-
-function stopwelcome(){
-if(iw > 2){
-  document.querySelector(".welcomepage").style="opacity:0;transition:opacity 3s";
-  }
-}
-var stopdisplay =  setTimeout(stopdisplay,9000);
-function stopdisplay (){
-
-document.querySelector(".welcomepage").style="display:none";
-  document.querySelector('.body').style="display:block";
-clearInterval(myVision);
-
-}
-var startup = setTimeout(startupdis,9200);
-function startupdis() {
-  document.querySelector('.navbar').style="height:60px;transition: height 2s;overflow-y:visible";
-  document.getElementById('intro').style="opacity:1;transition: all 4s";
-}
-
-/*menubar*/
 function myFunction(x) {
   x.classList.toggle("change");
   var x =  document.querySelector(".mobimenu");
